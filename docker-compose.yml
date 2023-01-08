@@ -1,8 +1,9 @@
 version: "3"
 services:
+  # docker 서비스 이름들
   redis-server:
-    image: "redis"
+    image: "redis" # 사용할 이미지
   node-app:
-    build: .
+    build: . # 현재 경로에 있는 도커 파일을 빌드 하겠다.
     ports:
       - "9060:9060"
